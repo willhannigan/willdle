@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    .tile-inactive{
+        @apply bg-gray-100 py-1 m-1 md:mb-1 text-xl md:text-3xl text-center
+    }
+
+    .tile-correct{
+        @apply transition-all duration-500 bg-green-500 py-1 m-1 md:mb-1 text-xl md:text-3xl text-center
+    }
+
+    .tile-in-word{
+        @apply transition-all duration-500 bg-yellow-500 py-1 m-1 md:mb-1 text-xl md:text-3xl text-center
+    }
+
+    .tile-not-in-word{
+        @apply transition-all duration-500 bg-gray-500 py-1 m-1 md:mb-1 text-xl md:text-3xl text-center
+    }
+
+    .tile-active{
+        @apply bg-gray-300 py-1 m-1 md:mb-1 text-xl md:text-3xl text-center
+    }
+
+    .keyboard-correct{
+        @apply transition-all duration-500 bg-green-500 text-center border-2 border-gray-100 py-3 px-1 md:px-2 md:m-1   cursor-pointer md:hover:border-black
+    }
+
+    .keyboard-in-word{
+        @apply transition-all duration-500 bg-yellow-500 text-center border-2 border-gray-100 py-3 px-1 md:px-2 md:m-1  cursor-pointer md:hover:border-black
+    }
+
+    .keyboard-not-in-word{
+        @apply transition-all duration-500 bg-gray-500 text-center border-2 border-gray-100 py-3 px-1 md:px-2 md:m-1  cursor-pointer md:hover:border-black
+    }
+
+    .keyboard-empty{
+        @apply duration-500 text-center border-2 border-gray-100 py-3 px-1 md:px-2 md:m-1 cursor-pointer md:hover:border-black
+
+    }
+
+
+
+};
+
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;700&display=swap');
+@layer utilities{
+
+    .h-200{
+        height:36rem;
+    }
+
+    .readex-h1{
+        font-family: 'Readex Pro', sans-serif;
+        font-size: 72px;
+    }
+    
+    .readex-h2{
+        font-family: 'Readex Pro', sans-serif;
+        font-size: 36px;
+    }
+    
+    .readex-h3{
+        font-family: 'Readex Pro', sans-serif;
+        font-size: 24px;
+    }
+    
+    .readex-h4{
+        font-family: 'Readex Pro', sans-serif;
+        font-size: 20px;
+    }
+    
+    .readex-p{
+        font-family: 'Readex Pro', sans-serif;
+        font-size: 16px;
+    }
+};
